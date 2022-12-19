@@ -22,7 +22,7 @@ const PredictImage = () => {
 
   const props: UploadProps = {
     name: "image",
-    action: "http://127.0.0.1:8000/api/food/predict/",
+    action: "http://35.223.12.18:8000/api/food/predict/",
     headers: {
       authorization: "authorization-text",
     },
@@ -66,7 +66,7 @@ const PredictImage = () => {
         <h3>This is how the CNN see the image and decide to label it as {result?.prediction_class || ''}</h3>
         <Image src={result?.grad_cam_predicted_image_path} alt='grade-cam' />
 
-        <h3>Also we recommend another food ase on its ingredients</h3>
+        <h3>Also we recommend another food base on its ingredients</h3>
         <h2>{result?.food_recommendation || ''}</h2>
       </ResultContainer>
       )}

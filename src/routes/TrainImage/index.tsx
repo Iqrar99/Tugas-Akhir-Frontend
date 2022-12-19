@@ -43,7 +43,7 @@ const TrainImage = () => {
     });
     setUploading(true);
     // You can use any AJAX library you like
-    fetch("http://127.0.0.1:8000/api/food/train/", {
+    fetch("http://35.223.12.18:8000/api/food/train/", {
       method: "POST",
       body: formData,
     })
