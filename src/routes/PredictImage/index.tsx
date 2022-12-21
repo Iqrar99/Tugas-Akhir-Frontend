@@ -22,7 +22,7 @@ const PredictImage = () => {
 
   const props: UploadProps = {
     name: "image",
-    action: "https://35.223.12.18:8000/api/food/predict/",
+    action: "https://34.121.229.152:8000/api/food/predict/",
     headers: {
       authorization: "authorization-text",
     },
